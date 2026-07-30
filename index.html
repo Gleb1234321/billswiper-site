@@ -72,13 +72,14 @@
 
   .cta-row{display:flex;flex-wrap:wrap;gap:14px;margin-bottom:26px;}
   .store-btn{
-    display:inline-flex;align-items:center;gap:12px;text-decoration:none;
+    display:inline-flex;align-items:center;justify-content:center;gap:12px;text-decoration:none;
     background:linear-gradient(180deg,#15121f,#0b0916);
     border:1px solid rgba(255,255,255,.14);
-    border-radius:16px;padding:12px 20px;min-width:190px;
+    border-radius:16px;padding:12px 20px;width:206px;flex:0 0 auto;
     transition:transform .18s ease,border-color .18s ease,box-shadow .18s ease;
     position:relative;
   }
+  @media (max-width:420px){ .store-btn{width:100%;} }
   .store-btn::before{
     content:"";position:absolute;inset:-1px;border-radius:16px;z-index:-1;
     background:linear-gradient(120deg,var(--teal),var(--purple),var(--pink));
@@ -423,7 +424,7 @@
 
     <div class="bottom-bar">
       <div class="brand"><img src="icon.png" alt="Bill Swiper">Bill Swiper</div>
-      <div>© 2026 Bill Swiper. Local mockup — not published.</div>
+      <div>© 2026 Bill Swiper.</div>
     </div>
   </footer>
 </div>
